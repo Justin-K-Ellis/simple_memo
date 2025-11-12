@@ -41,7 +41,7 @@ main {
 }
 
 .inner-container {
-  width: auto;
+  flex: 1;
 }
 
 .login-btns {
@@ -83,6 +83,10 @@ main {
 }
 
 @media (max-width: 400px) {
+  main {
+    width: 90%;
+  }
+
   .login-btns {
     gap: 0.5rem;
   }
