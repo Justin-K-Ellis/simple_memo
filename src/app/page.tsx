@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <h1>Simple Memo</h1>
+      <p>In the herp, party derp.</p>
     </>
   );
 }

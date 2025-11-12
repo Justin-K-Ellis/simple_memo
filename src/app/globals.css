@@ -3,3 +3,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+button {
+  background: black;
+  border-radius: 0.25rem;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.navbar {
+  align-items: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.login-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .login-btns {
+    gap: 0.5rem;
+  }
+}

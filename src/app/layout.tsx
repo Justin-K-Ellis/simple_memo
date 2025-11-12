@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSans.variable} ${notoSansMono.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>
