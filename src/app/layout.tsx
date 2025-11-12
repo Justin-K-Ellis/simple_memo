@@ -3,7 +3,7 @@ import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import SidebarContainer from "./components/SidebarContainer";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${notoSans.variable} ${notoSansMono.variable}`}>
         <Navbar />
         <div className="container">
-          <Sidebar />
+          <SidebarContainer />
           <div className="inner-container">
             <main>{children}</main>
           </div>

@@ -1,4 +1,8 @@
-export default function Sidebar() {
+export interface SideBarProps {
+  handleSidebarToggle: () => void;
+}
+
+export default function Sidebar({ handleSidebarToggle }: SideBarProps) {
   const dummyNotes: string[] = [
     "Cat Facts",
     "Tokyo Restaurants",
@@ -9,7 +13,9 @@ export default function Sidebar() {
     <aside className="sidebar">
       <div className="sidebar-toggle">
         <h2>My Notes</h2>
-        <p className="sidebar-toggle-ctr">&lt;</p>
+        <p className="sidebar-toggle-ctr" onClick={handleSidebarToggle}>
+          &lt;
+        </p>
       </div>
       <ul>
         {dummyNotes.map((note) => (

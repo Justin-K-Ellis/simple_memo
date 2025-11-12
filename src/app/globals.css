@@ -1,3 +1,7 @@
+:root {
+  --border: 1px solid black;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Noto Sans";
@@ -47,17 +51,22 @@ main {
 
 .navbar {
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: var(--border);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
 
 .sidebar {
-  border-right: 1px solid black;
+  border-right: var(--border);
   height: 100%;
   padding: 1rem;
   width: 20%;
+}
+
+.sidebar-collapsed {
+  border-right: var(--border);
+  width: 3%;
 }
 
 .sidebar-toggle {
@@ -67,9 +76,10 @@ main {
 }
 
 .sidebar-toggle-ctr {
-  border: 1px solid black;
+  border: var(--border);
   border-radius: 12.5%;
   padding: 0.25rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 400px) {
@@ -83,5 +93,9 @@ main {
 
   .sidebar {
     width: 60%;
+  }
+
+  .sidebar-collapsed {
+    width: 15%;
   }
 }
