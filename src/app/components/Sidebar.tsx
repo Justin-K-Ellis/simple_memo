@@ -13,9 +13,9 @@ export default function Sidebar({ handleSidebarToggle }: SideBarProps) {
     <aside className="sidebar">
       <div className="sidebar-toggle">
         <h2>My Notes</h2>
-        <p className="sidebar-toggle-ctr" onClick={handleSidebarToggle}>
-          &lt;
-        </p>
+        <button type="button" onClick={handleSidebarToggle}>
+          Close
+        </button>
       </div>
       <ul>
         {dummyNotes.map((note) => (

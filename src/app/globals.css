@@ -19,6 +19,7 @@ button {
   border-radius: 0.25rem;
   border: none;
   color: white;
+  margin: 0.25rem;
   padding: 0.5rem;
 }
 
@@ -66,7 +67,7 @@ main {
 
 .sidebar-collapsed {
   border-right: var(--border);
-  width: 3%;
+  width: 4%;
 }
 
 .sidebar-toggle {

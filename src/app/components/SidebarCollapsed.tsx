@@ -5,9 +5,9 @@ export default function SidebarCollapsed({
 }: SideBarProps) {
   return (
     <aside className="sidebar-collapsed">
-      <p className="sidebar-toggle-ctr" onClick={handleSidebarToggle}>
-        &gt;
-      </p>
+      <button type="button" onClick={handleSidebarToggle}>
+        Open
+      </button>
     </aside>
   );
 }
