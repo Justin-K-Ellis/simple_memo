@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:seed": "npx tsx ./src/db/index.ts"
+    "db:seed": "npx tsx ./src/db/seed.ts"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
