@@ -1,9 +1,7 @@
-import db from "../db/index";
-import { notesTable } from "@/db/schema";
+import getAllNotes from "./lib/db/getAllNotes";
 
 export default async function Home() {
-  const notes = await db.select().from(notesTable);
-  console.log(notes);
+  const notes = await getAllNotes();
 
   return (
     <>
