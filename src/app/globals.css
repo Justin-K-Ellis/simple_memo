@@ -10,6 +10,12 @@
 
 /* Elements */
 
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   height: 100vh;
 }
@@ -74,6 +80,10 @@ main {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.note-preview:hover {
+  opacity: 70%;
 }
 
 .posting-date {
