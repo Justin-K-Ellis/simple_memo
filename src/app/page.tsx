@@ -13,6 +13,7 @@ export default async function Home() {
           {note.updatedAt !== null && (
             <p>Update: {note.updatedAt.toISOString()}</p>
           )}
+          <hr />
         </div>
       ))}
     </>

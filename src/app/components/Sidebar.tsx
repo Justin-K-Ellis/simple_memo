@@ -1,14 +1,11 @@
+import { Title } from "@/types";
+
 export interface SideBarProps {
   handleSidebarToggle: () => void;
+  titles: Title[];
 }
 
-export default function Sidebar({ handleSidebarToggle }: SideBarProps) {
-  const dummyNotes: string[] = [
-    "Cat Facts",
-    "Tokyo Restaurants",
-    "Movies to See",
-  ];
-
+export default function Sidebar({ handleSidebarToggle, titles }: SideBarProps) {
   return (
     <aside className="sidebar">
       <div className="sidebar-toggle">
@@ -18,8 +15,8 @@ export default function Sidebar({ handleSidebarToggle }: SideBarProps) {
         </button>
       </div>
       <ul>
-        {dummyNotes.map((note) => (
-          <li key={note}>{note}</li>
+        {titles.map((title) => (
+          <li key={title.id}>{title.title}</li>
         ))}
       </ul>
     </aside>
