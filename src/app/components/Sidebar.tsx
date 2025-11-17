@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Title } from "@/types";
 
 export interface SideBarProps {
@@ -16,7 +17,9 @@ export default function Sidebar({ handleSidebarToggle, titles }: SideBarProps) {
       </div>
       <ul>
         {titles.map((title) => (
-          <li key={title.id}>{title.title}</li>
+          <li key={title.id}>
+            <Link href={`/notes/${title.id}`}>{title.title}</Link>
+          </li>
         ))}
       </ul>
     </aside>
