@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Sidebar from "./Sidebar";
 import SidebarCollapsed from "./SidebarCollapsed";
-import useGetNoteTitles from "../hooks/useGetNoteTitles";
+import useGetNoteTitles from "../lib/hooks/useGetNoteTitles";
 
 export default function SidebarContainer() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
