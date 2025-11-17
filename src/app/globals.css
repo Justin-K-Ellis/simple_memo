@@ -46,6 +46,12 @@ main {
   height: 100%;
 }
 
+.full-note {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .inner-container {
   flex: 1;
 }
@@ -68,6 +74,11 @@ main {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.posting-date {
+  font-size: 0.85rem;
+  color: gray;
 }
 
 .sidebar {

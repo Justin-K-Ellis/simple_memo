@@ -9,10 +9,10 @@ export default async function Note({
   const note = await getNoteById(parseInt(id));
 
   return (
-    <div>
+    <div className="full-note">
       <h1>{note.title}</h1>
       <p>{note.body}</p>
-      <p>Posted: {note.createdAt.toISOString()}</p>
+      <p className="posting-date">Posted: {note.createdAt.toISOString()}</p>
     </div>
   );
 }
