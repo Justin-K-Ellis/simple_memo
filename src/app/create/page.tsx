@@ -10,8 +10,8 @@ export default function Create() {
   return (
     <>
       <h1>Create a Note</h1>
-      <form>
-        <div>
+      <form className="create-note-form">
+        <div className="create-note-form-title">
           <label htmlFor="title">Title</label>
           <input
             type="text"

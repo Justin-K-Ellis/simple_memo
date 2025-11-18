@@ -23,7 +23,7 @@ body {
 button {
   background: black;
   border-radius: 0.25rem;
-  border: none;
+  border: 1px solid white;
   color: white;
   margin: 0.25rem;
   padding: 0.5rem;
@@ -52,10 +52,34 @@ main {
   height: 100%;
 }
 
+.create-note-form {
+  border: 1px solid grey;
+  padding: 1rem;
+  width: 100%;
+}
+
+.create-note-form textarea {
+  font-family: "Noto Sans Mono";
+  width: 100%;
+}
+
+.create-note-form-title {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.create-note-form-title input {
+  font-family: "Noto Sans Mono";
+}
+
 .full-note {
+  border: 1px solid grey;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  margin: 2rem;
+  padding: 1rem;
 }
 
 .inner-container {
@@ -120,9 +144,24 @@ main {
   margin-top: 1rem;
 }
 
+.update-delete-btns {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
 @media (max-width: 400px) {
+  /* Elements */
   main {
     width: 90%;
+  }
+
+  /* Classes */
+  .full-note {
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 
   .login-btns {
