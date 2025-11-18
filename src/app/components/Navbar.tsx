@@ -10,6 +10,9 @@ export default function Navbar() {
         <div className="login-btns">
           <button>Login</button>
           <button>Sign Up</button>
+          <Link href={"/create"}>
+            <button>Create</button>
+          </Link>
         </div>
       </nav>
     </header>
