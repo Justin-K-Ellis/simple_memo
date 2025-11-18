@@ -98,6 +98,10 @@ main {
   width: 20%;
 }
 
+.sidebar ul li:hover {
+  text-decoration: underline;
+}
+
 .sidebar-collapsed {
   border-right: var(--border);
   width: 4%;
