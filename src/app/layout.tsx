@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
+import { Noto_Sans_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import SidebarContainer from "./components/SidebarContainer";
 
-const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
+const notoSansMono = Noto_Sans_Mono({
+  variable: "--font-noto-sans-mono",
   subsets: ["latin"],
 });
 
-const notoSansMono = Noto_Sans_Mono({
-  variable: "--font-noto-sans-mono",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.variable} ${notoSansMono.variable}`}>
+      <body className={`${roboto.variable} ${notoSansMono.variable}`}>
         <Navbar />
         <div className="container">
           <SidebarContainer />
